@@ -1057,6 +1057,52 @@ header img {
   }
 }
 
+@media (max-width: 991.98px) {
+  .services-section {
+    padding: 70px 0 40px;
+  }
+  
+  .services-widget .service-item {
+    margin-bottom: 30px;
+  }
+  
+  .services-widget .service-item .left-box .service-title {
+    font-size: 22px;
+  }
+  
+  .services-widget .service-item .right-box {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .services-section {
+    padding: 60px 0 30px;
+  }
+  
+  .services-widget .service-item {
+    padding: 0 20px;
+  }
+  
+  .services-widget .service-item .left-box .service-title {
+    font-size: 20px;
+  }
+  
+  .services-widget .service-item .right-box {
+    font-size: 14px;
+    display: none; /* Hide by default on mobile */
+  }
+  
+  .services-widget .service-item.active .right-box {
+    display: block; /* Show when active */
+    margin-top: 15px;
+  }
+  
+  .services-widget i {
+    display: block; /* Show toggle icon */
+  }
+}
+
 /* Services Widget Icon Styles */
 .services-widget i {
   position: absolute;
@@ -2264,8 +2310,6 @@ footer img {
 /* -------------  End: Portfoli Details Area  --------------*/
 
 /* =============== Responsive Styles =============== */
-
-/* General Responsive Styles */
 @media (max-width: 1199.98px) {
   /* Adjust font sizes for large desktops */
   :root {
